@@ -47,7 +47,15 @@ Capacitar o desenvolvedor a criar aplicações **modernas, escaláveis e alinhad
 
 ## 🚧 Status
 
-📘 Em andamento (Cursando)
+Instalação 
+
+node -v = verificar a versão do node
+
+npm -v =  Verificar a versão do npm
+
+npx create-next-app@latest = para instalar a versão mais recente
+
+npx create-create-app  (nome do projeto)
 
 ---
 
