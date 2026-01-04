@@ -55,7 +55,7 @@ Capacitar o desenvolvedor a criar aplicações **modernas, escaláveis e alinhad
 
 - npx create-next-app@latest = para instalar a versão mais recente
 
-- npx create-create-app  (nome do projeto)
+- npx create-next-app  (nome do projeto)
 
 ---
 
