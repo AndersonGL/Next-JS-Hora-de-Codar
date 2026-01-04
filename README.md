@@ -47,7 +47,7 @@ Capacitar o desenvolvedor a criar aplicações **modernas, escaláveis e alinhad
 
 ## 🚧 Status
 
-Instalação 
+- Instalação 
 
 node -v = verificar a versão do node
 
