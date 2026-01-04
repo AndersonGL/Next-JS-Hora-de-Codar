@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.className} ${geistMono.className}`}>
-        <h1>Header</h1>
+     {/* <h1>header</h1> */}
         {children}
       </body>
     </html>
