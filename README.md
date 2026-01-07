@@ -57,6 +57,10 @@ Capacitar o desenvolvedor a criar aplicações **modernas, escaláveis e alinhad
 
 - npx create-next-app  (nome do projeto)
 
+- rafce para criar uma estrutura -> instalando a extensão ES7+ React/Redux/React-Native snippets
+
+- 
+
 ---
 
 ## 👤 Autor
