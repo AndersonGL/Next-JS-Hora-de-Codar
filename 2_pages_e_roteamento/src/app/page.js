@@ -23,6 +23,10 @@ export default function Home() {
         Posts
       </Link>
 
+        {/* Aula 3 - parâmetros na url */}
+
+        <Link href="/exemplo?parametro=abc">Página com parâmetro</Link>
+
     </main>
   );
 }
