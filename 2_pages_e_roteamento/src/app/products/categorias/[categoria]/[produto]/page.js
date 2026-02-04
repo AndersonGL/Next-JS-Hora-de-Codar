@@ -1,5 +1,3 @@
-import React from 'react'
-
 const ProductPage = ({params}) => {
     const produto = params.produto;
 
@@ -7,7 +5,7 @@ const ProductPage = ({params}) => {
 
   return (
     <div>
-     <h1> Vendo produto </h1>
+     <h1> Vendo produto camisa gola v</h1>
     </div>
   )
 }
