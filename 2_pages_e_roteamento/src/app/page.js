@@ -23,7 +23,12 @@ export default function Home() {
 
       {/* Aula 4 - nested routes */}
 
-      <Link href="/products/categorias/roupas"> Ir a categoria de Roupas</Link>
+      <Link href="/products/categorias/"> Ir a categoria de Roupas</Link>
+       {/* Aula 7 - Nested layout*/}
+      
+       <Link href="/dashboard/categorias/"> Ir a categoria de Roupas no Dashboard</Link>
+      
+
     </main>
   );
 }
