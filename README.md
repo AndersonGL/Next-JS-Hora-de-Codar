@@ -55,11 +55,11 @@ Capacitar o desenvolvedor a criar aplicações **modernas, escaláveis e alinhad
 
 - npx create-next-app@latest = para instalar a versão mais recente
 
-- npx create-next-app  (nome do projeto)
+- "npx create-next-app (nome do projeto)"
 
 - rafce para criar uma estrutura -> instalando a extensão ES7+ React/Redux/React-Native snippets
 
-- 
+- npm run dev -> para iniciar o servidor
 
 ---
 
