@@ -12,9 +12,10 @@ export default function Home() {
          <div className={styles.container}>
           <p>Testando CSS Modules</p>
          </div>
-          <div className={styles.container}>
-            <h3>Teste</h3>
-          </div>
+         {/* 3 - Tailwind CSS */}
+         <div className="bg-blue-500 p-4 rounded-lg">
+          <p>Teste Tailwind</p>
+         </div>
        
       </main>
   
