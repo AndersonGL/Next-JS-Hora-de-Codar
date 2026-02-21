@@ -1,0 +1,14 @@
+.heading_module {
+    color: #CCC;
+    background-color: yellow;
+    padding: 10px;
+}
+
+.container p {
+    color: blue;
+    
+}
+
+.container h3{
+    color: green;
+}
