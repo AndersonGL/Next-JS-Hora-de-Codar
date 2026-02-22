@@ -1,5 +1,9 @@
 import Image from "next/image";
 import styles from './page.module.css'
+import MyComponent from './components/MyComponent'
+import Container from './components/Container'
+import Button from './components/Button'
+import CustomButton from './components/CustomButton'
 
 export default function Home() {
   return (
@@ -13,11 +17,14 @@ export default function Home() {
           <p>Testando CSS Modules</p>
          </div>
          {/* 3- Tailwind CSS */}
-         <div className="bg-blue-500 p-4 rounded-lg">
-          <p>Teste Tailwind</p>
-         </div>
-       
-      </main>
+         <MyComponent />
+         {/* 4- SASS */}
+          <Container />
+          {/* 5- SASS com CSS Modules */}
+          <Button />
+          {/* 6- Styled Components */}
+          <CustomButton>Clique Aqui</CustomButton>
+        </main>
   
   );
 }
