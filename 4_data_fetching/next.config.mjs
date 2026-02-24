@@ -2,6 +2,7 @@
 const nextConfig = {
   /* config options here */
   reactCompiler: true,
+  serverExternalPackages: ["@prisma/client"],
 };
 
 export default nextConfig;
