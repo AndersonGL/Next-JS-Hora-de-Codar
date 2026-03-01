@@ -4,6 +4,9 @@ import { notFound } from "next/navigation";
 
 
 const TodoShow = async ({params}) => {
+
+await new Promise(resolve => setTimeout(resolve, 2000));
+
 const resolvedParams = await params;
 const rawId = resolvedParams?.id;
 
