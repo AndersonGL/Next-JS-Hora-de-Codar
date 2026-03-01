@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "prisma": "^7.4.1"
+    "prisma": "^6.19.2"
   }
 }
