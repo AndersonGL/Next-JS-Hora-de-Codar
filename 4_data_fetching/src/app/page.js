@@ -1,15 +1,21 @@
 import db from "@/db";
-import { redirect } from "next/navigation";
 import Link from "next/link";
-
-async function handleDelete(id) {
-  "use server";
-  await db.todo.delete({
-    where: { id }
-  });
-}
+import { revalidatePath } from "next/cache";
 
 export default async function Home() {
+
+  async function handleDelete(formData) {
+    "use server";
+
+    const idValue = formData.get("id");
+    if (typeof idValue !== "string") return;
+
+    await db.todo.delete({
+      where: { id: BigInt(idValue) }
+    });
+
+    revalidatePath("/");
+  }
 
   // 3 - Resgate de dados do banco de dados
   const todos = await db.todo.findMany();
@@ -17,16 +23,16 @@ export default async function Home() {
 
   // 4 - Excluao de dados do banco de dados
 
-  async function deleteTodo (formData) {
-    "use server";
-    const id = parseInt(formData.get("id"));
+  // async function deleteTodo (formData) {
+  //   "use server";
+  //   const id = parseInt(formData.get("id"));
 
-    await db.todo.delete({
-      where: { id }
-    });
+  //   await db.todo.delete({
+  //     where: { id }
+  //   });
 
-    redirect("/"); // Redireciona para a página inicial após a exclusão
-  }
+  //   redirect("/"); // Redireciona para a página inicial após a exclusão
+  // }
 
   return (
 
@@ -43,8 +49,8 @@ export default async function Home() {
               <div className="flex space-x-2 mt-3">
                 <Link href={`/todos/${todo.id}`} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Visualizar</Link>
                  <Link href={`/todos/${todo.id}/edit`}className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Editar</Link>
-                < form action={deleteTodo}>
-                  <input type="hidden" name="id" value={todo.id} />
+                <form action={handleDelete}>
+                  <input type="hidden" name="id" value={todo.id.toString()} />
                   <button type="submit" className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Excluir</button>
                 </form>
               </div>
