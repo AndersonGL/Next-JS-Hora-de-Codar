@@ -1,34 +1,7 @@
-import db from "@/db";  // importando o banco de dados
-import { redirect } from "next/navigation";
+import { addTodo } from "@/action";
 
 // 1- Criação de um formulário
 const TodoPage = () => {
-
-  // Formdate - useState
-  // 2 - Inserção de dados no banco de dados
-  const addTodo = async (formData) => {
-    "use server"
-    console.log(formData)
-
-    const titulo = formData.get("titulo")
-    const descricao = formData.get("descricao")
-
-    console.log(titulo, descricao);
-
-
-    // validação
-
-    const todo = await db.todo.create({
-      data: {
-        titulo,
-        descricao,
-      },
-    });
-
-    console.log(todo)
-
-    redirect("/")
-  };
 
 
   return (

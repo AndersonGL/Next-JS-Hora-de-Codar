@@ -1,6 +1,7 @@
 import db from "@/db";
 import Link from "next/link";
 import { revalidatePath } from "next/cache";
+import { redirect } from "next/dist/server/api-utils";
 
 export default async function Home() {
 
@@ -18,8 +19,22 @@ export default async function Home() {
   }
 
   // 3 - Resgate de dados do banco de dados
+
+
   const todos = await db.todo.findMany();
 
+  async function deleteTodo(formData) {
+
+    "use server";
+
+    const id = Number(formData.get("id"));
+
+    await db.todo.delete({
+      where: { id }
+    });
+
+    redirect("/"); // Redireciona para a página inicial após a exclusão
+  }
 
   // 4 - Excluao de dados do banco de dados
 
@@ -60,4 +75,5 @@ export default async function Home() {
       </div>
     </main>
   );
-}
+  
+  };
