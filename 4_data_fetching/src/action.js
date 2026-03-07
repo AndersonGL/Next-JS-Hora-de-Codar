@@ -14,3 +14,11 @@ import { redirect } from "next/navigation";
 
     redirect("/"); // Redireciona para a página inicial após a exclusão
   }
+
+  export async function findTodoById(id) {
+        const todo = await db.todo.findUnique({
+          where: { id }
+    });
+
+    return todo;
+  }
