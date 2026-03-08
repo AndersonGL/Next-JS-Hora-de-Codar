@@ -52,7 +52,7 @@ export default async function Home() {
   return (
 
     <main className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Todos!</h1>
+      <h1 className="text-2xl font-bold mb-4">Lista de Tarefas</h1>
       <div className="space-y-4">
         {todos.map((todo) => (
           <div key={todo.id} className="bg-gray-100 p-4 rounded-lg shadow">

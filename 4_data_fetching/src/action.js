@@ -3,18 +3,46 @@
 import db from "./db.js";
 import { redirect } from "next/navigation";
 
-export async function addTodo(formData) {
-    const titulo = formData.get("titulo");
-    const descricao = formData.get("descricao");
+export async function addTodo(formState, formData) {
+  const titulo = formData.get("titulo")?.toString().trim() ?? "";
+  const descricao = formData.get("descricao")?.toString().trim() ?? "";
 
+  if (!titulo) {
+    return {
+      errors: "O titulo e obrigatorio.",
+      fields: { titulo, descricao },
+    };
+  }
+
+  if (titulo.length < 5) {
+    return {
+      errors: "O titulo deve conter no minimo 5 caracteres.",
+      fields: { titulo, descricao },
+    };
+  }
+
+  if (descricao.length < 10) {
+    return {
+      errors: "A descricao deve conter no minimo 10 caracteres.",
+      fields: { titulo, descricao },
+    };
+  }
+
+  try {
     await db.todo.create({
-        data: {
-            titulo,
-            descricao,
-        },
+      data: {
+        titulo,
+        descricao,
+      },
     });
+  } catch {
+    return {
+      errors: "Ocorreu um erro ao criar a tarefa. Tente novamente.",
+      fields: { titulo, descricao },
+    };
+  }
 
-    redirect("/");
+  redirect("/");
 }
 
 
@@ -42,29 +70,65 @@ export const updateTodo = async(formState, formData) => {
     const descricao = formData.get("descricao")?.toString().trim() ?? "";
     const id = BigInt(formData.get("id"));
 
+   try {
 
-    // tratamento de erros
-
-
-
-
-    if (titulo.length <5) {
-        return { errors: "O titulo deve conter no minimo 5 caracteres." };
+     if (!titulo) {
+      return {
+        errors: "O titulo e obrigatorio.",
+        fields: { titulo, descricao },
+      };
     }
 
-    if (!titulo) {
-        return { errors: "O titulo e obrigatorio." };
+    if (titulo.length <5) {
+      return {
+        errors: "O titulo deve conter no minimo 5 caracteres.",
+        fields: { titulo, descricao },
+      };
     }
 
     if (descricao.length < 10) {
-        return { errors: "A descrição deve conter no minimo 10 caracteres." };
+      return {
+        errors: "A descricao deve conter no minimo 10 caracteres.",
+        fields: { titulo, descricao },
+      };
     }   
+    
+    try {
+      await db.todo.update({
+          where: { id },
+          data: { titulo, descricao },
+      });
 
-    await db.todo.update({
-        where: { id },
-        data: { titulo, descricao },
-    });
+    } catch {
+      return {
+        errors: "Ocorreu um erro ao atualizar a tarefa. Tente novamente.",
+        fields: { titulo, descricao },
+      };
+    }
 
-    redirect("/");
+    redirect("/"); // Redireciona para a página inicial após a atualização
+   } catch {
+    return {
+      errors: "Ocorreu um erro ao atualizar a tarefa. Tente novamente.",
+      fields: { titulo, descricao },
+    };
+   }
+};
 
-}
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
