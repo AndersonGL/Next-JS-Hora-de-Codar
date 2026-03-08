@@ -44,7 +44,7 @@ const TodoForm = ({ todo }) => {
             </label>
 
             <button type='submit' disabled={isPending} className='bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 disabled:opacity-70'>
-                {isPending ? 'Salvando...' : 'Salvar edição'}
+                {isPending ? 'Salvando...' : 'Salvar'}
             </button>
         </form>
     );

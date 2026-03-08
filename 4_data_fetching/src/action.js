@@ -2,6 +2,7 @@
 
 import db from "./db.js";
 import { redirect } from "next/navigation";
+import { revalidatePath } from "next/cache";
 
 export async function addTodo(formState, formData) {
   const titulo = formData.get("titulo")?.toString().trim() ?? "";
@@ -42,6 +43,7 @@ export async function addTodo(formState, formData) {
     };
   }
 
+  revalidatePath("/");
   redirect("/");
 }
 
@@ -53,6 +55,7 @@ export async function deleteTodo(formData) {
       where: { id }
     });
 
+    revalidatePath("/");
     redirect("/"); // Redireciona para a página inicial após a exclusão
 }
 
@@ -70,9 +73,7 @@ export const updateTodo = async(formState, formData) => {
     const descricao = formData.get("descricao")?.toString().trim() ?? "";
     const id = BigInt(formData.get("id"));
 
-   try {
-
-     if (!titulo) {
+    if (!titulo) {
       return {
         errors: "O titulo e obrigatorio.",
         fields: { titulo, descricao },
@@ -106,13 +107,8 @@ export const updateTodo = async(formState, formData) => {
       };
     }
 
+    revalidatePath("/");
     redirect("/"); // Redireciona para a página inicial após a atualização
-   } catch {
-    return {
-      errors: "Ocorreu um erro ao atualizar a tarefa. Tente novamente.",
-      fields: { titulo, descricao },
-    };
-   }
 };
 
 
