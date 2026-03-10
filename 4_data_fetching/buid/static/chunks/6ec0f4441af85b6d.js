@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,42570,e=>{"use strict";var a=e.i(43476),t=e.i(22016);e.i(71645),e.s(["default",0,()=>(0,a.jsxs)("div",{children:["Ocorreu um problema ao editar a tarefa. tente novamente mais tarde.",(0,a.jsx)(t.default,{href:"/",children:" Voltar para home!"})]})])}]);

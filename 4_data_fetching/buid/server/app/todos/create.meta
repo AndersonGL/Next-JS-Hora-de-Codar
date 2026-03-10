@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/todos/layout,_N_T_/todos/create/layout,_N_T_/todos/create/page,_N_T_/todos/create"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/todos/create/__PAGE__",
+    "/todos/create",
+    "/todos",
+    "/_index",
+    "/_head"
+  ]
+}

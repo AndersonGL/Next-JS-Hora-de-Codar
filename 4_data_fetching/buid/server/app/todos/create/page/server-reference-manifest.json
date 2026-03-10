@@ -1,0 +1,20 @@
+{
+  "node": {
+    "6009d582b1cbb39e84750567aac08006493a6f1b96": {
+      "workers": {
+        "app/todos/create/page": {
+          "moduleId": 93551,
+          "async": false,
+          "exportedName": "addTodo",
+          "filename": "src/action.js"
+        }
+      },
+      "layer": {
+        "app/todos/create/page": "action-browser"
+      },
+      "exportedName": "addTodo",
+      "filename": "src/action.js"
+    }
+  },
+  "edge": {}
+}

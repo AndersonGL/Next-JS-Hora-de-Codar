@@ -1,0 +1,103 @@
+{
+  "node": {
+    "40c7c365b2c1b3b064a0b4819d8c02bf26b2b86d49": {
+      "workers": {
+        "app/page": {
+          "moduleId": 56316,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/page.js"
+        }
+      },
+      "layer": {
+        "app/page": "rsc"
+      },
+      "filename": "src/app/page.js",
+      "exportedName": "$$RSC_SERVER_ACTION_0"
+    },
+    "40ce089f601258ee944ab82c6fa8b370cc2e3ae88d": {
+      "workers": {
+        "app/page": {
+          "moduleId": 56316,
+          "async": false,
+          "exportedName": "$$RSC_SERVER_ACTION_1",
+          "filename": "src/app/page.js"
+        }
+      },
+      "layer": {
+        "app/page": "rsc"
+      },
+      "filename": "src/app/page.js",
+      "exportedName": "$$RSC_SERVER_ACTION_1"
+    },
+    "40af4818b74bd11c6a3d64713480e094d9d3b3682e": {
+      "workers": {
+        "app/todos/[id]/edit/page": {
+          "moduleId": 40652,
+          "async": false,
+          "exportedName": "findTodoById",
+          "filename": "src/action.js"
+        }
+      },
+      "layer": {
+        "app/todos/[id]/edit/page": "rsc"
+      },
+      "filename": "src/action.js",
+      "exportedName": "findTodoById"
+    },
+    "40f1e77b56cf52ccc1d1ab0f6f94151811aa57cb1f": {
+      "workers": {
+        "app/todos/[id]/edit/page": {
+          "moduleId": 40652,
+          "async": false,
+          "exportedName": "deleteTodo",
+          "filename": "src/action.js"
+        }
+      },
+      "layer": {
+        "app/todos/[id]/edit/page": "rsc"
+      },
+      "filename": "src/action.js",
+      "exportedName": "deleteTodo"
+    },
+    "6009d582b1cbb39e84750567aac08006493a6f1b96": {
+      "workers": {
+        "app/todos/[id]/edit/page": {
+          "moduleId": 40652,
+          "async": false,
+          "exportedName": "addTodo",
+          "filename": "src/action.js"
+        },
+        "app/todos/create/page": {
+          "moduleId": 93551,
+          "async": false,
+          "exportedName": "addTodo",
+          "filename": "src/action.js"
+        }
+      },
+      "layer": {
+        "app/todos/[id]/edit/page": "rsc",
+        "app/todos/create/page": "action-browser"
+      },
+      "filename": "src/action.js",
+      "exportedName": "addTodo"
+    },
+    "60bb962f265510651d96e530aac750e0abd8842951": {
+      "workers": {
+        "app/todos/[id]/edit/page": {
+          "moduleId": 40652,
+          "async": false,
+          "exportedName": "updateTodo",
+          "filename": "src/action.js"
+        }
+      },
+      "layer": {
+        "app/todos/[id]/edit/page": "action-browser"
+      },
+      "filename": "src/action.js",
+      "exportedName": "updateTodo"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "vlvs9EuRVfzCk3dnGJkaVnnhRVqvbKB0Tsxv43AScGs="
+}
