@@ -1,0 +1,6 @@
+{
+  "/page": "app/page.js",
+  "/todos/[id]/edit/page": "app/todos/[id]/edit/page.js",
+  "/todos/[id]/page": "app/todos/[id]/page.js",
+  "/todos/create/page": "app/todos/create/page.js"
+}

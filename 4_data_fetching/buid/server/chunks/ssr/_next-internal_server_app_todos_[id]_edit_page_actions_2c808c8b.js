@@ -1,0 +1,3 @@
+module.exports=[50971,a=>{"use strict";var b=a.i(46600);a.s([],58527),a.i(58527),a.s(["400c240206c16a703cbb2159df5d8c654727d8c8a8",()=>b.findTodoById,"404060f904a926efd87a337badbcbb6f8a92d48fb2",()=>b.toggleTodoStatus,"4081b5669b66fad3d9d472c0139225ba2fd065ae91",()=>b.deleteTodo,"6056cb80cbe431c125e4e537cb3d1b7aaf7ffc471e",()=>b.addTodo,"60ef362d35a3d41dba0861bc687a590098f723adfa",()=>b.updateTodo],50971)}];
+
+//# sourceMappingURL=_next-internal_server_app_todos_%5Bid%5D_edit_page_actions_2c808c8b.js.map

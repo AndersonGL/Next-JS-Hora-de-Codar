@@ -1,3 +1,0 @@
-module.exports=[40652,a=>{"use strict";var b=a.i(15212);a.s([],6560),a.i(6560),a.s(["40af4818b74bd11c6a3d64713480e094d9d3b3682e",()=>b.findTodoById,"40f1e77b56cf52ccc1d1ab0f6f94151811aa57cb1f",()=>b.deleteTodo,"6009d582b1cbb39e84750567aac08006493a6f1b96",()=>b.addTodo,"60bb962f265510651d96e530aac750e0abd8842951",()=>b.updateTodo],40652)}];
-
-//# sourceMappingURL=_next-internal_server_app_todos_%5Bid%5D_edit_page_actions_b26e6dee.js.map

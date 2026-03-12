@@ -1,7 +1,7 @@
 "use client";
 
 import { useActionState } from "react";
-import { addTodo } from "@/action";
+import { addTodo } from "@/actions";
 
 // 1- Criação de um formulário
 const TodoPage = () => {

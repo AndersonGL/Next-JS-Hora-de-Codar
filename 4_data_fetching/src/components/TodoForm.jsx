@@ -1,7 +1,7 @@
 'use client';
 
 import { useActionState } from 'react';
-import { updateTodo } from '@/action';
+import { updateTodo } from '@/actions';
 
 const TodoForm = ({ todo }) => {
     const [formState, action, isPending] = useActionState(updateTodo, {

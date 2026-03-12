@@ -1,5 +1,5 @@
 import React from "react";
-import { findTodoById } from "@/action";
+import { findTodoById } from "@/actions";
 import { notFound } from "next/navigation";
 import TodoForm from "@/components/TodoForm";
 

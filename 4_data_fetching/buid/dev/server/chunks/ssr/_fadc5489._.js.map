@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/ADM/OneDrive/Next-JS-Hora-de-Codar/4_data_fetching/src/components/Checkbox.jsx"],"sourcesContent":["'use client'\r\n\r\n\r\nimport React from 'react'\r\n\r\nconst Checkbox = ({ checked}) => {\r\n  return (\r\n    \r\n      <input type=\"checkbox\" \r\n      checked={checked}\r\n      className=\"w-5\"\r\n      onChange={(e) => e.target.form?.requestSubmit()} /> \r\n  );\r\n};\r\n\r\nexport default Checkbox"],"names":[],"mappings":";;;;;AAGA;AAHA;;;AAKA,MAAM,WAAW,CAAC,EAAE,OAAO,EAAC;IAC1B,qBAEI,8OAAC;QAAM,MAAK;QACZ,SAAS;QACT,WAAU;QACV,UAAU,CAAC,IAAM,EAAE,MAAM,CAAC,IAAI,EAAE;;;;;;AAEtC;uCAEe"}},
+    {"offset": {"line": 30, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/ADM/OneDrive/Next-JS-Hora-de-Codar/4_data_fetching/node_modules/next/src/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = (\n  require('../../module.compiled') as typeof import('../../module.compiled')\n).vendored['react-ssr']!.ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":"AAAAA,OAAOC,OAAO,GACZC,QAAQ,4HACRC,QAAQ,CAAC,YAAY,CAAEC,kBAAkB","ignoreList":[0]}}]
+}

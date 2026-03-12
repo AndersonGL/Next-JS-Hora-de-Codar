@@ -1,0 +1,20 @@
+{
+  "node": {
+    "6077acc3e3d1a457c6de6a375e0d1d6d07d52a90dc": {
+      "workers": {
+        "app/todos/create/page": {
+          "moduleId": "[project]/.next-internal/server/app/todos/create/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "addTodo",
+          "filename": "src/actions.js"
+        }
+      },
+      "layer": {
+        "app/todos/create/page": "action-browser"
+      },
+      "exportedName": "addTodo",
+      "filename": "src/actions.js"
+    }
+  },
+  "edge": {}
+}

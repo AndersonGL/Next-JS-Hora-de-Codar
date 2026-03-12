@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,39477,e=>{"use strict";var t=e.i(43476);e.i(71645),e.s(["default",0,({checked:e})=>(0,t.jsx)("input",{type:"checkbox",checked:e,className:"w-5",onChange:e=>e.target.form?.requestSubmit()})])}]);

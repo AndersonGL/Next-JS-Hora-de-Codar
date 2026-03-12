@@ -1,0 +1,80 @@
+{
+  "node": {
+    "409af8cf08fc4dd0c32a4f1531012daf065c449638": {
+      "workers": {
+        "app/todos/[id]/edit/page": {
+          "moduleId": "[project]/.next-internal/server/app/todos/[id]/edit/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "toggleTodoStatus",
+          "filename": "src/actions.js"
+        }
+      },
+      "layer": {
+        "app/todos/[id]/edit/page": "rsc"
+      },
+      "exportedName": "toggleTodoStatus",
+      "filename": "src/actions.js"
+    },
+    "40a54bf0e6d26758edcc7bb7a358c31437ca30fa31": {
+      "workers": {
+        "app/todos/[id]/edit/page": {
+          "moduleId": "[project]/.next-internal/server/app/todos/[id]/edit/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "findTodoById",
+          "filename": "src/actions.js"
+        }
+      },
+      "layer": {
+        "app/todos/[id]/edit/page": "rsc"
+      },
+      "exportedName": "findTodoById",
+      "filename": "src/actions.js"
+    },
+    "40e3fe0d34ba5cea38a40369aa5e6317253c64ec2e": {
+      "workers": {
+        "app/todos/[id]/edit/page": {
+          "moduleId": "[project]/.next-internal/server/app/todos/[id]/edit/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "deleteTodo",
+          "filename": "src/actions.js"
+        }
+      },
+      "layer": {
+        "app/todos/[id]/edit/page": "rsc"
+      },
+      "exportedName": "deleteTodo",
+      "filename": "src/actions.js"
+    },
+    "6077acc3e3d1a457c6de6a375e0d1d6d07d52a90dc": {
+      "workers": {
+        "app/todos/[id]/edit/page": {
+          "moduleId": "[project]/.next-internal/server/app/todos/[id]/edit/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "addTodo",
+          "filename": "src/actions.js"
+        }
+      },
+      "layer": {
+        "app/todos/[id]/edit/page": "rsc"
+      },
+      "exportedName": "addTodo",
+      "filename": "src/actions.js"
+    },
+    "60ea9c916c6361cee93200d1f681b222210dfc99eb": {
+      "workers": {
+        "app/todos/[id]/edit/page": {
+          "moduleId": "[project]/.next-internal/server/app/todos/[id]/edit/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateTodo",
+          "filename": "src/actions.js"
+        }
+      },
+      "layer": {
+        "app/todos/[id]/edit/page": "action-browser"
+      },
+      "exportedName": "updateTodo",
+      "filename": "src/actions.js"
+    }
+  },
+  "edge": {}
+}

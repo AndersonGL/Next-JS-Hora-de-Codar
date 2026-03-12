@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/ADM/OneDrive/Next-JS-Hora-de-Codar/4_data_fetching/src/app/todos/%5Bid%5D/edit/error.js"],"sourcesContent":["\"use client\"\r\n\r\nimport Link from \"next/link\"\r\nimport { use } from \"react\";\r\n\r\nconst \r\n    TodoEditErrorPage = () => {\r\n  return (\r\n    <div>Ocorreu um problema ao editar a tarefa. tente novamente mais tarde.\r\n    <Link href=\"/\"> Voltar para home!</Link>\r\n    </div>\r\n  )\r\n}\r\n\r\nexport default  TodoEditErrorPage;\r\n\r\n"],"names":[],"mappings":";;;;;AAEA;AACA;AAHA;;;;AAKA,MACI,oBAAoB;IACtB,qBACE,8OAAC;;YAAI;0BACL,8OAAC,uKAAI;gBAAC,MAAK;0BAAI;;;;;;;;;;;;AAGnB;uCAEgB"}},
+    {"offset": {"line": 39, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/ADM/OneDrive/Next-JS-Hora-de-Codar/4_data_fetching/node_modules/next/src/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = (\n  require('../../module.compiled') as typeof import('../../module.compiled')\n).vendored['react-ssr']!.ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":"AAAAA,OAAOC,OAAO,GACZC,QAAQ,4HACRC,QAAQ,CAAC,YAAY,CAAEC,kBAAkB","ignoreList":[0]}}]
+}
