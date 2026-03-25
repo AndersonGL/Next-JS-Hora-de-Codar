@@ -1,0 +1,40 @@
+// Primeira coisa, vamos importar o NextAuth e os provedores 
+// de autenticação que queremos usar. Neste exemplo,
+//  usaremos o Google como provedor de autenticação.
+
+import type { NextAuthConfig } from "next-auth";
+import NextAuth from "next-auth";
+
+import google from "next-auth/providers/google";
+
+import { PrismaAdapter } from "@auth/prisma-adapter";
+import { prisma } from "./prisma/client";
+
+
+const prismaAdapter = PrismaAdapter(prisma);
+
+
+const config = {
+    adapter: prismaAdapter,
+    session: {
+        strategy: "jwt",
+    },
+    providers: [google],
+    callbacks: {
+        authorized({request, auth}) {
+
+         const {pathname} = request.nextUrl
+
+         if (pathname === "/middleware") {
+
+            return !! auth;
+         }
+
+          return true;
+
+        },
+    },
+
+}satisfies NextAuthConfig;
+
+export const { handlers, auth, signIn, signOut } = NextAuth(config);   
