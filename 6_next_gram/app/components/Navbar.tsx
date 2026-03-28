@@ -23,18 +23,18 @@ const Navbar = async () => {
             </form>
             </div>
         ) : (
-            //deslogado
-            <form action={async () =>{
-                "use server"
-                await signIn();
-            }}>
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                    Entrar</button>
-            </form>
+            
+         <Link href= "/signin"className= "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+         
+         Entrar
+
+         </Link>
+          
+       
         )}
         </div>
     </div>
   )
 }
 
-export default Navbar
+export default Navbar;

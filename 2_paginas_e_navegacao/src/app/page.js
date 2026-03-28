@@ -2,6 +2,8 @@ import Link from "next/link";
 import BotaoRedirect from "@/components/BotaoRedirect";
 
 export default function Home() {
+
+  
   return (
     <main>
       <section>
