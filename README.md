@@ -57,7 +57,11 @@ Capacitar o desenvolvedor a criar aplicações **modernas, escaláveis e alinhad
 
 - "npx create-next-app (nome do projeto)"
 
-- rafce para criar uma estrutura -> instalando a extensão ES7+ React/Redux/React-Native snippets
+- rfce para criar uma estrutura -> instalando a extensão ES7+ React/Redux/React-Native snippets
+
+- npm i  react-icons react-modal
+
+- npx migrate npx prisma migrate dev
 
 - npm run dev -> para iniciar o servidor
 
