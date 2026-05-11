@@ -61,7 +61,7 @@ Capacitar o desenvolvedor a criar aplicações **modernas, escaláveis e alinhad
 
 - npm i  react-icons react-modal
 
-- npx migrate npx prisma migrate dev
+- npx prisma migrate dev
 
 - npm run dev -> para iniciar o servidor
 
