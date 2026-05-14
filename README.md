@@ -24,6 +24,10 @@ O aprendizado é progressivo, começando pelos fundamentos e avançando para arq
 - JavaScript / TypeScript  
 - Node.js  
 
+
+- npx prisma migrate dev
+- npm i react-icons react modal
+- npm install next@14.2.35 react@18.2.0 react-dom@18.2.0
 ---
 
 ## 🔑 Principais Conceitos Abordados

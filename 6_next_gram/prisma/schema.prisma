@@ -18,10 +18,19 @@ model User {
   image         String?
   accounts      Account[]
   sessions      Session[]
+
+//? Optional for WebAuthn support
+
   authenticators Authenticator[]
+
+
+//? Relações da aplicação
+
   posts         Post[]
   likes         Like[]
   comments      Comment[]
+
+
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
 }
@@ -38,6 +47,8 @@ model Account {
   scope             String?
   id_token          String?
   session_state     String?
+
+// Relações 
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt

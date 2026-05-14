@@ -6,11 +6,11 @@ import { Comment } from "./Comment";
 export interface Post {
     id: string;
     imageUrl: string;
-    caption?: string;
+    caption?: string | null;
     userId: string;
     createdAt: Date;
     updatedAt: Date;
     user: User;
-    likes?: Like[];
-    comments?: Comment[];
+    likes?: Like[] | [];
+    comments?: Comment[]  | [];
 }
