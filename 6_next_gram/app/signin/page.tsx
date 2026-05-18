@@ -7,15 +7,7 @@ const providerIcons: Record<string, ReactNode> = {
   Google: <BsGoogle />,
 }
 
-const icons = [{name: 'Google', icon: <BsGoogle />}]
-
 const SignInPage = async () => {
-
-  const findIcon = (name: string) => {
-    const icon = icons.find((icon) => icon.name === name)
-    return icon ? icon.icon : null
-  }
-
   return (
     <div className="w-1/2 mx-auto my-1 px-4 flex flex-col gap-2">
       <h2 className='text-[2rem] leading-10 font-semibold text-center'>Acesse ou crie sua conta
@@ -33,8 +25,8 @@ const SignInPage = async () => {
           className="my-10 flex justify-center items-center"
 
           >
-            <button className="h-10 px-6 py-1 font-mediu border border-zinc-600 flex items-center gap-2 roundend hover:bg-slate-50">
-              {findIcon(provider.name)}
+            <button className="h-10 px-6 py-1 font-medium border border-zinc-600 flex items-center gap-2 rounded hover:bg-slate-50">
+              {providerIcons[provider.name]}
               <span>Entrar com <strong>{provider.name}</strong></span>
             </button>
           </form>

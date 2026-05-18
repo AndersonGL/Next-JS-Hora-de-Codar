@@ -21,7 +21,7 @@ const config = {
   },
   providers: [google],
   pages: {
-    signIn: "/signIn",
+    signIn: "/signin",
   },
   callbacks: {
     // 1. O callback jwt é chamado antes do session. Você pode usar para adicionar dados do usuário ao token
